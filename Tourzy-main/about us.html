@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tourzy</title>
+    <link rel="stylesheet" href="./css/aboutus.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tourzy!</h1>
+    </header>
+    <section>
+        <h2>About Us</h2>
+        <p>At Tourzy, we believe that travel is more than just visiting new places; it's about creating unforgettable experiences and memories that last a lifetime. Founded by a group of passionate travelers, our mission is to make exploring the world accessible, enjoyable, and enriching for everyone.</p>
+        <p id="moreText" class="hidden">Tourzy was born out of a shared love for adventure and discovery. Our founders, seasoned travelers themselves, realized that the best journeys are those that are well-planned yet spontaneous, immersive yet comfortable. With this vision, Tourzy was created to offer personalized travel experiences that cater to the unique preferences and interests of each traveler.</p>
+        <button id="readMoreBtn" onclick="toggleReadMore()">Read More →</button>
+    </section>
+    <section>
+        <h2>What We Offer</h2>
+        <ul>
+            <li><strong>Customized Itineraries:</strong> We understand that every traveler is different. That's why we offer tailor-made itineraries that suit your interests, whether you're an adventure seeker, a culture enthusiast, or someone looking to relax and unwind.</li>
+            <li><strong>Expert Guidance:</strong> Our team of travel experts is here to provide you with insider tips, local insights, and recommendations to ensure you get the most out of your trip.</li>
+            <li><strong>Seamless Planning:</strong> From booking flights and accommodations to arranging tours and activities, we take care of all the details so you can focus on enjoying your journey.</li>
+            <li><strong>Sustainable Travel:</strong> We are committed to promoting responsible and sustainable travel practices. We work with local communities and eco-friendly partners to ensure that our tours have a positive impact on the environment and the places we visit.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Our Values</h2>
+        <ul>
+            <li><strong>Passion for Travel:</strong> We are driven by our love for exploring new destinations and sharing that passion with our clients.</li>
+            <li><strong>Customer-Centric Approach:</strong> Your satisfaction is our top priority. We strive to provide exceptional service and create travel experiences that exceed your expectations.</li>
+            <li><strong>Integrity and Trust:</strong> We believe in building lasting relationships with our clients based on honesty, transparency, and trust.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Join Us on a Journey</h2>
+        <p>Whether you're planning a solo adventure, a romantic getaway, or a family vacation, Tourzy is here to make your travel dreams come true. Let us take you on a journey of a lifetime, filled with incredible moments and cherished memories.</p>
+    </section>
+    <script>
+        function toggleReadMore() {
+            var moreText = document.getElementById("moreText");
+            var btnText = document.getElementById("readMoreBtn");
+
+            if (moreText.classList.contains("hidden")) {
+                moreText.classList.remove("hidden");
+                btnText.innerHTML = "Read Less ←";
+            } else {
+                moreText.classList.add("hidden");
+                btnText.innerHTML = "Read More →";
+            }
+        }
+    </script>
+</body>
+</html>
